@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "name": "Post 1",
+      "link": "https://example.com/post1",
+      "imageLink": "https://example.com/image1.jpg"
+    },
+    {
+      "name": "Post 2",
+      "link": "https://example.com/post2",
+      "imageLink": "https://example.com/image2.jpg"
+    },
+    // Add more posts as needed
+  ]
+}
