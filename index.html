@@ -188,6 +188,25 @@
 
 // Load and display saved posts when the page loads
 window.addEventListener("load", loadPosts);
+	    // Function to load and display posts
+    function loadPosts() {
+        // Send a GET request to fetch the posts.json file (using a relative path)
+        fetch('posts.json?t=' + new Date().getTime())
+            .then(response => response.json())
+            .then(data => {
+                // Loop through the posts and display them on the page
+                data.posts.forEach(post => {
+                    // Create and append post elements to the grid (similar to previous examples)
+                    // ...
+                });
+            })
+            .catch(error => {
+                console.error('Error loading posts:', error);
+            });
+    }
+
+    // Load and display saved posts when the page loads
+    window.addEventListener("load", loadPosts);
 
     </script>
 </body>
